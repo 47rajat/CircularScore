@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.wssholmes.stark.circularscore.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="16dp">
+
+        <com.wssholmes.stark.circular_score.CircularScoreView
+            android:id="@+id/one"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            app:setSecondaryColor="@android:color/white"
+            android:layout_weight="1"/>
+
+        <com.wssholmes.stark.circular_score.CircularScoreView
+            android:id="@+id/two"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            app:setTextColor="@color/colorAccent"
+            android:layout_weight="1"/>
+
+        <com.wssholmes.stark.circular_score.CircularScoreView
+            android:id="@+id/three"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            app:score="50"
+            app:setPrimaryColor="@color/colorPrimary"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+
+
+</FrameLayout>

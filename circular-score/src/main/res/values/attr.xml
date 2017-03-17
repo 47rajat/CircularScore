@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CircularScoreView">
+        <attr name="score" format="integer"/>
+        <attr name="setTextColor" format="color"/>
+        <attr name="setPrimaryColor" format="color"/>
+        <attr name="setSecondaryColor" format="color"/>
+        <attr name="setBackgroundColor" format="color"/>
+    </declare-styleable>
+</resources>
