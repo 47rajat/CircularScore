@@ -36,7 +36,7 @@ ext {
     siteUrl = 'https://github.com/wssholmes/CircularScore'
     gitUrl = 'https://github.com/wssholmes/CircularScore.git'
 
-    libraryVersion = '0.1.0'
+    libraryVersion = '0.1.1'
 
     developerId = 'wssholmes'
     developerName = 'Rajat'

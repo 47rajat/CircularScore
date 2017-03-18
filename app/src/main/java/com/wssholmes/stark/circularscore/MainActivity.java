@@ -17,6 +17,8 @@ public class MainActivity extends AppCompatActivity {
         CircularScoreView two = (CircularScoreView) findViewById(R.id.two);
         CircularScoreView three = (CircularScoreView) findViewById(R.id.three);
 
+        one.setPrimaryColor(0);
+
         CircularScoreAnimation oneAnimation = new CircularScoreAnimation(one, 25);
         oneAnimation.setDuration(2000);
 

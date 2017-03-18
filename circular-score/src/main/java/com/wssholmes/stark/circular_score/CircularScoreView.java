@@ -19,6 +19,8 @@ public class CircularScoreView extends View{
     private int mScore;
     private float mDiameter;
     private float mTextSize;
+    private float mCentreX;
+    private float mCentreY;
     private RectF mRectF;
 
     private int mTextColor;
@@ -66,7 +68,7 @@ public class CircularScoreView extends View{
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
 
-        canvas.drawCircle(mDiameter/2f, mDiameter/2f,mDiameter/2f, mBackgroundPaint);
+        canvas.drawCircle(mCentreX, mCentreY,mDiameter/2f, mBackgroundPaint);
 
         mScore = Math.min(100, mScore);
         float sweepAngle = (mScore/100f)*360f;
@@ -76,8 +78,8 @@ public class CircularScoreView extends View{
         canvas.drawArc(mRectF, 270f, sweepAngle, false, mScorePaint);
 
         String text = Integer.toString(mScore) + "%";
-        float xPos =  (mDiameter / 2) - (mTextPaint.measureText(text)/2);
-        float yPos =  ((mDiameter / 2) - ((mTextPaint.descent() + mTextPaint.ascent()) / 2)) ;
+        float xPos =  (mCentreX ) - (mTextPaint.measureText(text)/2);
+        float yPos =  ((mCentreY) - ((mTextPaint.descent() + mTextPaint.ascent()) / 2)) ;
         canvas.drawText(text, xPos, yPos, mTextPaint);
     }
 
@@ -93,13 +95,16 @@ public class CircularScoreView extends View{
         float ww = (float)w - xpad;
         float hh = (float)h - ypad;
 
-        // Figure out how big we can make the pie.
+        // Setting dimensions for the circle.
         mDiameter = Math.min(ww, hh);
-        float leftArc = 0.07f*mDiameter;
-        float topArc =  0.07f*mDiameter;
-        float rightArc = 0.93f*mDiameter;
-        float bottomArc = 0.93f*mDiameter;
+        float leftArc = 0.07f*mDiameter + xpad/2f;
+        float topArc =  0.07f*mDiameter + ypad/2f;
+        float rightArc = 0.93f*mDiameter + xpad/2f;
+        float bottomArc = 0.93f*mDiameter + ypad/2f;
         mRectF = new RectF(leftArc,topArc,rightArc,bottomArc);
+
+        mCentreX = (mDiameter + xpad)/2f;
+        mCentreY = (mDiameter + ypad)/2f;
 
         mTextSize = mDiameter/3f;
         mTextPaint.setTextSize(mTextSize);

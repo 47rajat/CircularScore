@@ -17,6 +17,7 @@
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_gravity="center"
+            app:score="10"
             app:setSecondaryColor="@android:color/white"
             android:layout_weight="1"/>
 
@@ -26,6 +27,7 @@
             android:layout_height="100dp"
             android:layout_gravity="center"
             app:setTextColor="@color/colorAccent"
+            app:setBackgroundColor="@android:color/white"
             android:layout_weight="1"/>
 
         <com.wssholmes.stark.circular_score.CircularScoreView
