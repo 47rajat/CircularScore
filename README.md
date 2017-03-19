@@ -1,5 +1,5 @@
 # CircularScore
------
+
 A lightweight custom circular view for android.
 
 [ ![Download](https://api.bintray.com/packages/wssholmes/circular-score/circular-score/images/download.svg) ](https://bintray.com/wssholmes/circular-score/circular-score/_latestVersion)
@@ -8,7 +8,7 @@ A lightweight custom circular view for android.
 
 
 ## Gradle
------
+
 
 ```gradle
 dependencies {
@@ -50,7 +50,7 @@ circularScoreView.setScore(20);
 - `void setTextColor(int color)` : used to set color of the text in the middle.
 
 ## Animation
-----
+
 ```java
 CircularScoreAnimation circularScoreAnimation = new CircularScoreAnimation(circularScoreView, 25);
 circularScoreAnimation.setDuration(2000); //duration in millisecond.
@@ -69,7 +69,7 @@ circularScoreView.startAnimation(circularScoreAnimation);
 
 
 ## License
-----
+
 The contents of this repository are covered under the [Apache License](https://github.com/wssholmes/CircularScore/blob/master/LICENSE)
 
 
