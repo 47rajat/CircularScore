@@ -17,8 +17,10 @@
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_gravity="center"
-            app:score="10"
-            app:setSecondaryColor="@android:color/white"
+            app:setPrimaryColor="@color/one_primary"
+            app:setSecondaryColor="@color/one_secondary"
+            app:setBackgroundColor="@color/one_background"
+            app:setTextColor="@color/one_text"
             android:layout_weight="1"/>
 
         <com.wssholmes.stark.circular_score.CircularScoreView
@@ -26,8 +28,10 @@
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_gravity="center"
-            app:setTextColor="@color/colorAccent"
-            app:setBackgroundColor="@android:color/white"
+            app:setPrimaryColor="@color/two_primary"
+            app:setSecondaryColor="@color/two_secondary"
+            app:setBackgroundColor="@color/two_background"
+            app:setTextColor="@color/two_text"
             android:layout_weight="1"/>
 
         <com.wssholmes.stark.circular_score.CircularScoreView
@@ -36,7 +40,10 @@
             android:layout_height="100dp"
             android:layout_gravity="center"
             app:score="50"
-            app:setPrimaryColor="@color/colorPrimary"
+            app:setPrimaryColor="@color/three_primary"
+            app:setSecondaryColor="@color/three_secondary"
+            app:setBackgroundColor="@color/three_background"
+            app:setTextColor="@color/three_text"
             android:layout_weight="1"/>
     </LinearLayout>
 
