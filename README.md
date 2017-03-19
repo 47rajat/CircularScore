@@ -4,7 +4,7 @@ A lightweight custom circular view for android.
 
 [ ![Download](https://api.bintray.com/packages/wssholmes/circular-score/circular-score/images/download.svg) ](https://bintray.com/wssholmes/circular-score/circular-score/_latestVersion)
 
-![alt text](https://media.giphy.com/media/m0zv8ji3eATEk/giphy.gif "Example app screenshot")
+![alt text](https://github.com/wssholmes/CircularScore/blob/master/example_screenshot.gif "Example app screenshot")
 
 
 ## Gradle
@@ -14,10 +14,10 @@ A lightweight custom circular view for android.
 dependencies {
     compile 'com.wssholmes.stark:circular-score:0.1.1'
 }
-````
+```
 
 ## Usage
----
+
 ```xml
 <com.wssholmes.stark.circular_score.CircularScoreView
             android:id="@+id/two"
